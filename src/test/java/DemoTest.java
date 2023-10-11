@@ -9,7 +9,24 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import Demo.java; 
+import Demo.java;
 
+public class DemoTest {
+    
+    @Test 
+    public void test_is_triangle_1() {
+        assertTrue(Demo.isTriangle(2, 4, 7));
+    }
 
+    @Test 
+    public void test_is_triangle_2() {
+        assertTrue(Demo.isTriangle(4, 2, 7));
+    }
+
+    @Test 
+    public void test_is_triangle_3() {
+        assertTrue(Demo.isTriangle(2, 7, 4));
+    }
+
+    
 }
