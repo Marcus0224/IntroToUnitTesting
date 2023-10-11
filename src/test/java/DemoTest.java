@@ -28,5 +28,13 @@ public class DemoTest {
         assertTrue(Demo.isTriangle(2, 7, 4));
     }
 
-    
+    @Test 
+    public void test_is_triangle_4() {
+        assertFalse(Demo.isTriangle(2, 7, -2));
+    }
+
+    @Test 
+    public void test_is_triangle_5() {
+        assertFalse(Demo.isTriangle(7, 4, 12));
+    }
 }
